@@ -10,7 +10,7 @@ import { ModalComponent } from './../modal/modal.component';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
-  listArrayItem = [
+  listArrayItem = [ 
     {
       "title": "Title 1",
       "itemNo": "1",
