@@ -1,0 +1,13 @@
+<div class="container" [hidden]="toggleFlag">
+    <form novalidate="" [formGroup]="_customSetting">
+      <label>Tile Width</label>
+      <input name="width" placeholder="width in px" type="text" formControlName="_width">
+      <label>Tile Height</label>
+      <input name="height" placeholder="height in px" type="text" formControlName= "_height">
+      <label>Tile Margin</label>
+      <input name="margin" placeholder="margin in px" type="text" formControlName= "_margin">
+      <button type="button" (click)="storeLocally()">STORE</button>
+      <button type="button" (click)="updateDirectally()">UPDATE</button>
+      <div class="clear"></div>
+    </form>
+  </div>

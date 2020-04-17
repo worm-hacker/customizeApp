@@ -1,0 +1,16 @@
+<div class="container-1">
+    <div class="list" style="width: 1290px;">
+        <div class="tile" *ngFor="let item of listArrayItem; let index= index" [ngStyle]="{'width':tilesDetails._width, 'height': tilesDetails._height,'margin': tilesDetails._margin}">
+            <div class="tile-title"><div class="triangle-bottomleft"></div>{{item.title}}</div>
+            <div class="center-text">{{item.itemNo}}</div>
+            <div class="star" [ngClass]="{'hilight': singleClickFlags[index] ===1, 'hilight-gold': singleClickFlags[index] ===2 }" title="single click to like or unlike, double click to golden like" (click)="singleClickStar(index)" (dblclick)="doubleClickStar(index)"></div>
+            <div class="info-holder">
+                <div class="info" (click)="openModal(item)">info</div>
+            </div>
+            <hr class="line">
+            <div class="open-holder">
+                <div class="open" (click)="openDetailRoute(index)">open</div>
+            </div>
+        </div>
+    </div>
+</div>
