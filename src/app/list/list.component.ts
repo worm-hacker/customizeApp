@@ -42,7 +42,7 @@ export class ListComponent implements OnInit {
       "info": "This is Information-5",
       "detail": "Detail About-5"
     },{
-      "title": "Title 6",
+      "title": "Title 6", 
       "itemNo": "6",
       "heading": "heading-6",
       "info": "This is Information-6",
